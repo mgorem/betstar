@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import CountdownTimer from "./components/CountdownTimer";
 
-function App() {
+import "./App.css";
+import Topbar from "./components/Topbar";
+
+export default function App() {
+  const DAYS_TO_EXPIRY_MS = 3 * 24 * 60 * 60 * 1000; // Enter time for expiry
+  const CURRENT_IN_MS = new Date().getTime(); // fetches current time
+
+  const dateTimeAfterSelectedDays = CURRENT_IN_MS + DAYS_TO_EXPIRY_MS;
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Topbar />
+      <h1>Shinda</h1>
+      <h1>JACKPOT YETU</h1>
+      <CountdownTimer targetDate={dateTimeAfterSelectedDays} />
     </div>
   );
 }
-
-export default App;
