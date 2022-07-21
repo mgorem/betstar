@@ -3,6 +3,7 @@ import styled from "styled-components"
 import CountdownTimer from "../components/CountdownTimer"
 import "../App.css";
 import Topbar from "../components/Topbar";
+import { smaller } from '../responsive'
 
 const BottomBar = styled.div`
     width: 50%;
@@ -20,7 +21,9 @@ const ImageSection = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: green; */
+    /* ${smaller({alignItems: "flex-end",
+                
+    })} */
 `
 const LeftImage = styled.div`
     display: flex;

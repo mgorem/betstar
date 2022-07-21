@@ -21,7 +21,69 @@
   background-color: #000;
   color: #fff;
 }
-.logo-container {
+
+/* screens that are 610px and less */
+@media screen and (max-width: 610px) {
+  .top-bar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .links-container {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: 1px solid #ff7f00;
+    border-radius: 2px;
+  }
+  .links-container > a:hover {
+    color: #ff7f00;
+  }
+  .login-button-container {
+    position: absolute;
+    margin-top: 10px;
+  }
+  .login-button {
+    position: relative;
+    top: -80px;
+    left: 450px;
+  }
+}
+@media screen and (max-width: 590px) {
+  .login-button {
+    position: relative;
+    top: -80px;
+    left: 400px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .login-button {
+    position: relative;
+    top: -80px;
+    left: 350px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .login-button {
+    position: relative;
+    top: -80px;
+    left: 300px;
+  }
+  .jackpot-image {
+    width: 80px;
+    height: 100px;
+    margin-left: 100px;
+  }
+  .banner-image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+  .banner-info {
+    font-size: 10px;
+    font-weight: 500;
+    padding-left: 50px;
+    padding-right: 30px;
+  }
 }
 .links-container {
   display: flex;
@@ -37,6 +99,7 @@
   align-items: center;
   justify-content: center;
   background-color: #ff7f00;
+  font-family: "Lato", sans-serif;
   color: #fff;
   padding: 6px 10px;
   font-size: 10px;
@@ -78,7 +141,6 @@
   width: 250px;
   height: 200px;
   margin-left: 80px;
-  /* object-fit: contain; */
 }
 .banner-image {
   width: 350px;
@@ -89,6 +151,8 @@
   font-size: 15px;
   font-weight: 900;
   padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 10px;
 }
 .expired-notice {
   text-align: center;
