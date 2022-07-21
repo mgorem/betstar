@@ -1,4 +1,5 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100;1,300;1,500;1,700;1,900&display=swap");
+.home {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -6,8 +7,10 @@
   align-items: center;
   justify-content: flex-start;
   background-color: #010203;
+  /* background-color: red; */
   color: #fff;
   font-size: 25px;
+  overflow: hidden;
 }
 .top-bar {
   width: 100vw;
@@ -57,6 +60,11 @@
   width: 150px;
   height: 60px;
   margin: 10px 0;
+}
+.shinda {
+  font-family: "Roboto", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
 }
 .expired-notice {
   text-align: center;
