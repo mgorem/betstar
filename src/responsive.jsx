@@ -9,3 +9,12 @@ export const smaller = (props) => {
         }
     `
 }
+
+export const mini = (props) => {
+    return css`
+    // 442 and below
+        @media only screen and (max-width: 442px) {
+            ${props}
+        }
+    `
+}

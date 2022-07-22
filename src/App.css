@@ -68,21 +68,23 @@
     top: -80px;
     left: 300px;
   }
-  .jackpot-image {
-    width: 80px;
-    height: 100px;
-    margin-left: 100px;
+}
+@media screen and (max-width: 442px) {
+  .login-button {
+    position: relative;
+    top: -80px;
+    left: 250px;
   }
-  .banner-image {
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-  }
-  .banner-info {
+  span .banner-info {
     font-size: 10px;
-    font-weight: 500;
-    padding-left: 50px;
-    padding-right: 30px;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 350px) {
+  .login-button {
+    position: relative;
+    top: -80px;
+    left: 150px;
   }
 }
 .links-container {
@@ -137,22 +139,10 @@
   -webkit-background-clip: text;
   background-clip: text;
 }
-.jackpot-image {
-  width: 250px;
-  height: 200px;
-  margin-left: 80px;
-}
-.banner-image {
-  width: 350px;
-  height: 200px;
-  object-fit: contain;
-}
 .banner-info {
-  font-size: 15px;
+  font-size: 10px;
   font-weight: 900;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 10px;
+  margin-bottom: 10px;
 }
 .expired-notice {
   text-align: center;
@@ -173,32 +163,37 @@
 }
 
 .show-counter {
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1rem;
+  /* background-color: blue; */
+  padding: 1px 10px;
 }
 
-.show-counter .countdown-link {
+.show-counter {
+  width: 40%;
+  margin: 0 auto;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   font-weight: 700;
   font-size: 3rem;
   line-height: 1.75rem;
-  padding: 1rem;
+  padding: 0 0.1rem;
   /* border: 1px solid #ebebeb; */
+  /* background-color: maroon; */
   border-radius: 0.25rem;
   text-decoration: none;
   color: #fff;
 }
 .show-counter .countdown {
   line-height: 3rem;
-  padding: 0 1rem 0 1rem;
-  margin: 0 2.3rem;
+  padding: 0 0.1rem 0 0.1rem;
+  margin: 0 1.5rem;
   align-items: center;
   display: flex;
   flex-direction: column;
   font-size: 45px;
   font-weight: 400;
+  /* background-color: greenyellow; */
 }
 
 .show-counter .countdown.danger {
