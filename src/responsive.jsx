@@ -18,3 +18,19 @@ export const mini = (props) => {
         }
     `
 }
+export const midMini = (props) => {
+    return css`
+    // 330 and below
+        @media only screen and (max-width: 355px) {
+            ${props}
+        }
+    `
+}
+export const superMini = (props) => {
+    return css`
+    // 330 and below
+        @media only screen and (max-width: 330px) {
+            ${props}
+        }
+    `
+}

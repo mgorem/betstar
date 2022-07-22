@@ -3,7 +3,7 @@ import styled from "styled-components"
 import CountdownTimer from "../components/CountdownTimer"
 import "../App.css";
 import Topbar from "../components/Topbar";
-import { mini, smaller } from '../responsive'
+import { midMini, mini, smaller, superMini } from '../responsive'
 
 const BottomBar = styled.div`
     width: 50%;
@@ -15,6 +15,9 @@ const BottomBar = styled.div`
     margin: 0 auto;
     /* border: 1px solid #fff; */
     margin-top: 50px;
+    ${smaller({overflow: "visible",
+                
+    })}
 `
 const ImageSection = styled.div`
   width: 40%;
@@ -22,10 +25,6 @@ const ImageSection = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: blue;
-    /* ${mini({backgroundColor: "blue",
-                
-    })} */
 `
 const SingleImage1 = styled.div`
     flex: 1;
@@ -33,7 +32,12 @@ const SingleImage1 = styled.div`
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    background-color: maroon;
+    ${mini({paddingLeft: "60px",
+                
+    })}
+    ${superMini({paddingLeft: "100px",
+                 width: "100px",
+    })}
 `
 const SingleImage2 = styled.div`
     flex: 1;
@@ -41,8 +45,13 @@ const SingleImage2 = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
-    background-color: green;
+    ${superMini({width: "100px",
+                 alignItems: "flex-start",
+                 paddingRight: "",
+    })}
+    /* ${midMini({fontSize: "8px",
+               
+    })} */
 `
 const Image1 = styled.img`
     /* ${mini({backgroundColor: "blue",
