@@ -6,11 +6,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  /* opacity: 0.5; */
   background-image: url("../public/images/betstar-background.jpg");
   /* background-color: red; */
   color: #fff;
   font-size: 25px;
   overflow: hidden;
+}
+.home::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 @media screen and (max-width: 490px) {
   .home {
@@ -24,7 +34,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #000;
+  /* background-color: #000; */
   color: #fff;
 }
 
@@ -34,16 +44,22 @@
     align-items: flex-start;
     flex-direction: column;
   }
+  /* .links-container {
+    visibility: hidden;
+  } */
   .links-container {
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    border: 1px solid #ff7f00;
-    border-radius: 2px;
+    /* border: 1px solid #ff7f00;
+    border-radius: 2px; */
   }
-  .links-container > a:hover {
+  .links-container > a {
+    visibility: hidden;
+  }
+  /* .links-container > a:hover {
     color: #ff7f00;
-  }
+  } */
   .login-button-container {
     position: absolute;
     margin-top: 10px;
